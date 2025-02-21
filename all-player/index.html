@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#18191c">
+<!--<meta name="theme-color" content="#1E293B" />   -->
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2LQ5nEgm5l7AObovSkN5ioGrCxeZYKG_74JEX1ytrd4-tGLfWVMP1-yGWHJpps1arorkZZDY9bICAF5R9qsAQieMGibuFrvzGsfiwfK4U9fcoFDK4Ec7A5jKxoneyY4niDWKIA-rSCcX2_idMW2J9vgmSxp0ZG2v98jzApKQ2tHLEpK7SNEmoCnAsTc8t/s1600/snapedit_1687270367386.jpeg"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeaceTV - Iframe Player</title>
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- P2P Media Loader Core -->
+  <script src="p2p-core-single.js"></script>
+  <!-- P2P Media Loader HLS.js Integration -->
+
+  <!-- Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="https://res.cloudinary.com/do1zdkwaj/raw/upload/v1704087632/SUB/neflex_uoodhg.css" rel="stylesheet">
+  
+	 <script language="JavaScript"> 
+function fullScreen(theURL) { 
+window.open(theURL, '', 'fullscreen=yes, scrollbars=no'); 
+} 
+// End --> 
+</script> 
+   <script type="text/javascript">      
+function   FullScreenMode()
+{        
+var win = window.open("", "full", "dependent=yes, fullscreen=yes");        
+win.location = window.location.href;        
+window.opener = null;    
+}       
+
+</script> 
+   <script language="JavaScript">
+$(function() {
+var zIndexNumber = 1000;
+$('body').each(function() {
+	$(this).css('zIndex', zIndexNumber);
+	zIndexNumber -= -10;
+});
+});
+</script>
+
+  <style>
+    #playerContainer2 {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      padding-top: 206.25%;
+      /* 16:9 Aspect Ratio */
+      margin-top:-160.5px !important;
+    }
+ 
+    #playerContainer2 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      transform: scale(1.04);
+    }
+  </style>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    #playerContainer {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      transform-origin: center center;
+      transition: none;
+      z-index:;
+      opacity: 1;
+    }
+
+    .Reload {
+      position: absolute;
+      top: 10px;
+      right: 13.5%;
+      /*background-color: #20BB2E;*/
+      background-color: rgb(32,178,170,.7);
+      padding: 2px 5px;
+      font-size: 0.7em;
+      color: white;
+      border: 1px solid rgba(255,255,255,.6);
+      border-radius: 3px;
+      z-index: 3;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/gh/peace94tes/peacetv@main/block.js" type="text/javascript"></script>
+  <script>
+    //window.self===window.top&&(window.location.href="https://peacetvid.blogspot.com/")
+  </script>
+</head>
+<body onload="periksaDomain()" style="background-color:black; margin:0;">
+
+  <div id="playerContainer">
+    <div id="player">
+      Loading the player...
+    </div>
+  </div>
+
+  <!--<button class="GetCode">Sharing</button>-->
+  <button class="Reload" onclick="javascript:window.location.reload()">Refresh</button>
+
+  <!--<div class="share_channell">
+      <div class="share-channel">
+          <div class="share-channel_title">Copy for your site</div>
+          <textarea id="player_share" onclick="this.select();" onfocus="this.select();"></textarea>
+          <button class="custom-btn" onclick="document.querySelector('#player_share').select();document.execCommand('copy');">Click to copy</button>
+      </div>-->
+
+
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      var embed = getParameterByName('sh');
+      var embed2 = getParameterByName('bein');
+      var embed3 = getParameterByName('jw');
+      var embed4 = getParameterByName('embed');
+      var embed5 = getParameterByName('cl');
+      if (embed) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<iframe src="https://peace94tes.github.io/shokoWV?url=' + embed + '" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
+      } else if (embed2) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<iframe src="https://peace94tes.github.io/openPlay/?url=https://cors-proxy.cooks.fyi/https://dffgtrdc.vffddd.online/bein' + embed2 + '/index.m3u8" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
+      } else if (embed3) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<iframe src="https://dgply.blogspot.com/2001/02/?m=1ewu~02&zy=https://cors-proxy.cooks.fyi/http://extraott.com:80/live/3969424152/3723991250/' + embed3 + '.m3u8" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
+      } else if (embed4) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<div id="playerContainer2"><iframe id="videoIframe" src="https://tv.tflix.app/live/'+ embed4 +'" sandbox="allow-orientation-lock allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation allowTransparency=" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection" allowfullscreen="true" mute="false" loading="lazy" width="100%" height="720px" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" autoplay="true"></iframe></div>';
+      } else if (embed5) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<iframe src="https://peace94tes.github.io/clopprCK?url=' + embed5 + '" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
+      } else {
+          document.getElementById('playerContainer').innerHTML = '<p>No media or embed URL provided.</p>';
+      }
+  });
+
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Script to redirect if developer tools are open
+  const redirect = 'https://peacetv01.blogspot.com'; // Replace with your desired redirect URL
+
+  if (window.devtools.isOpen) {
+      window.location.href = redirect;
+  }
+
+  window.addEventListener('devtoolschange', event => {
+      if (event.detail.isOpen) {
+          window.location.href = redirect;
+      }
+  });
+</script>
+
+
+  <script type="text/javascript">
+// Daftar domain yang diizinkan melakukan iframe
+const allowedDomains = ["peacetv01.blogspot.com","peacetvid.blogspot.com","cobaedithtml.blogspot.com","ratix94.blogspot.com"];
+
+// Fungsi untuk memeriksa apakah halaman sedang dimuat di dalam iframe
+function checkAndRedirect() {
+  if (window.top !== window.self) {
+      // Periksa apakah referrer ada
+      if (document.referrer) {
+          const referrerDomain = new URL(document.referrer).hostname;
+          
+          // Log referrer untuk debugging
+          console.log("Referrer Domain: ", referrerDomain);
+
+          // Periksa apakah domain referrer ada di daftar allowedDomains
+          if (!allowedDomains.includes(referrerDomain)) {
+              console.log("Domain tidak diizinkan, redirecting...");
+              // Redirect jika domain tidak diizinkan
+              window.top.location = "https://peacetv01.blogspot.com"; // Ganti dengan URL tujuan yang diinginkan
+          } else {
+              console.log("Domain diizinkan, tidak di-redirect.");
+          }
+      } else {
+          console.log("Referrer kosong, tidak ada redirect.");
+      }
+  }
+}
+
+// Periksa setiap 30 detik (30000 ms)
+setInterval(checkAndRedirect, 30000);
+
+// Pengecekan pertama setelah 5 menit
+setTimeout(checkAndRedirect, 300000);
+</script>
+  <script disable-devtool-auto="" data-url="https://peacetv01.blogspot.com/p/live.html" src="//cdn.jsdelivr.net/gh/peace94tes/LogoSports@main/JS/devtool.js"></script>
+</body>
+</html>
