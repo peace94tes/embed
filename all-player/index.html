@@ -136,6 +136,7 @@ $('body').each(function() {
       var embed4 = getParameterByName('embed');
       var embed5 = getParameterByName('cl');
       var embed6 = getParameterByName('ovo');
+      var embed7 = getParameterByName('id');
       if (embed) {
           // Embedding the iframe with additional attributes
           document.getElementById('playerContainer').innerHTML = '<iframe src="https://peace94tes.github.io/shokoWV?url=' + embed + '" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
@@ -154,6 +155,9 @@ $('body').each(function() {
       } else if (embed6) {
           // Embedding the iframe with additional attributes
           document.getElementById('playerContainer').innerHTML = '<iframe src="https://cobaedithtml.blogspot.com/p/play1.html?m=1&eya02&zy=https://alperlunfi.xyz/live/'+ embed6 +'/chunks.m3u8" allow="encrypted-media" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
+      } else if (embed7) {
+          // Embedding the iframe with additional attributes
+          document.getElementById('playerContainer').innerHTML = '<iframe src="https://peace94tes.github.io/openPlay/?url=https://cors-proxy.cooks.fyi/http://185.156.74.112/iptv/3HYPASK67VVUSL/' + embed7 + '/index.m3u8" allow="encrypted-media" style="width:100% !important; height:100% !important; position: fixed; top: 0; left: 0;" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="orientation-lock" autoplay></iframe>';
       } else {
           document.getElementById('playerContainer').innerHTML = '<p>No media or embed URL provided.</p>';
       }
